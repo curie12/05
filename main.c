@@ -3,20 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-    int numb=0;
-    char c;
+    int sum=0;
+    int inputnum;
+    int i;
   
-    printf("input a string : ");
+    printf("input a number : ");
+    scanf("%i", &inputnum);
     
-    while( (c=getchar()) != '\n' )
+    for( i=0; i<=inputnum; i++ )
     {      
-           if( c>='0' && c<='9' )
-               numb++;
+           sum = sum + i;
     }          
     
-    printf("the number of digits is %i\n", numb);
+    printf("the result is %i\n", sum);
            
-   
     system("PAUSE");	
     return 0;
 }
